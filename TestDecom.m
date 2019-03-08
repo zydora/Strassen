@@ -22,4 +22,4 @@ C(3,1,3) = 1;
 C(4,3,3) = 1;
 C(1,1,4) = 1;
 C(2,3,4) = 1;
-tic;[xx,error] = Decom(C,7,3);toc
+tic;[xx,error] = Decom(C,7,3,1);toc
