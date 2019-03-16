@@ -7,11 +7,12 @@ for i = 1:size(x1,2)
     for j = 1:size(x1,2)
         if (x1(:,i)'*x1(:,j))/(x1(:,i)'*x1(:,i)) > threshold1
             t(i,j) = 1;
-        elseif (x1(:,i)'*x1(:,j))/(x1(:,i)'*x1(:,i)) < threshold2
-            t(i,j) = -1;
+        %elseif (x1(:,i)'*x1(:,j))/(x1(:,i)'*x1(:,i)) < threshold2
+        %    t(i,j) = -1;
         end
     end
 end
+t = 2*t-1;
 B = zeros(r,d2);
 S = zeros(d1,r);
 IndexS = Gen_ind([1,2,3],d1)-2;
