@@ -2,6 +2,7 @@ function x_index = Gen_index(X,r)
 % This function generates x_index from r components
 % X should be a vector consisting of elements needed to rank, r should be
 % the number of elements needed to rank
+% Deprecated version
 
 x_min = min(X);
 x_max = max(X);
